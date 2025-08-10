@@ -282,6 +282,82 @@ transition: all 0.2s ease-in;
     color: white;
 }
 
+.footer-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    width: 100px;
+}
+
+.footer-logo h2 {
+    font-weight: lighter;
+    font-size: 20px;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+.footer-logo img {
+    width: 50px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: all 0.2s ease-in;
+}
+
+.footer-link:hover {
+    cursor: pointer;
+    color: rgba(17, 44, 3, 0.502);
+}
+
+.footer-social {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.social-link {
+    font-size: 25px;
+    color: rgb(43, 43, 43);
+    transition: all 0.2s ease-in;
+}
+
+.social-link:hover {
+    cursor: pointer;
+    color: rgba(17, 44, 3, 0.502);
+}
+
+.footer-copyright {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright-text {
+    width: 80%;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
 @media screen and (max-width: 1024px) {
     .hero-content h1 {
         font-size: 2.5rem;

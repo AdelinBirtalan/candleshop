@@ -1,12 +1,26 @@
 import '../Home/Home.css'
-import { FaCreditCard, FaBox } from "react-icons/fa";
+import { Link } from 'react-router-dom'
+import {useLocation } from "react-router-dom";
+import logo from "../../Media/logo.png"
+import { FaCreditCard, FaBox, FaGithub, FaLinkedin } from "react-icons/fa";
 import { TbTruckDelivery } from "react-icons/tb";
+import { AiFillInstagram } from "react-icons/ai";
 import { CiHeart } from "react-icons/ci";
 import products from '../../Products';
 import infoPhoto from "../../Media/info-photo.jpg"
 
 
 function Home() {
+
+ const location = useLocation();
+
+  const handleHomeClick = (e) => {
+    if (location.pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
     return (
         <>
         <header className='hero'>
@@ -94,7 +108,32 @@ function Home() {
             <button>Get Updates</button>
             </div>
         </div>
+
+        <div className="footer-section">
+            <div className="footer-logo">
+                <img src={logo} alt="Logo" />
+                <h2>Candly</h2>
+            </div>
+            <div className="footer-links">
+                <Link to="/" className="footer-link" onClick={handleHomeClick}>Home</Link>
+                <Link to="/products" className="footer-link">Products</Link>
+                <Link to="/contact" className="footer-link">Contact</Link>
+                <Link to="/about" className="footer-link">About</Link>
+            </div>
+            <div className="footer-social">
+                <a href="https://github.com/AdelinBirtalan" target='blank_'><FaGithub className='social-link'/></a>
+                <a href="https://www.linkedin.com/in/adelin-birtalan-7760a82b1/" target='blank_'><FaLinkedin  className='social-link'/></a>
+                <a href="https://www.instagram.com/birtalanadelin/" target='blank_'><AiFillInstagram  className='social-link'/></a>
+            </div>
+        </div>
+
+        <div className="footer-copyright">
+            <div className="copyright-text">
+            <h4>Copyright © Adelin Birtalan</h4>
+            </div>
+        </div>
         </>
+        
     )
 }
 
