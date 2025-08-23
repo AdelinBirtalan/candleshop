@@ -358,6 +358,18 @@ transition: all 0.2s ease-in;
     border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 
+@media screen and (max-width: 1180px) {
+.image-el img {
+    width: 350px;
+}
+
+.text-el {
+    left: 15px;
+    width: 500px;
+}
+}
+
+
 @media screen and (max-width: 1024px) {
     .hero-content h1 {
         font-size: 2.5rem;
@@ -380,6 +392,16 @@ transition: all 0.2s ease-in;
         gap: 2rem;
         flex-wrap: wrap;
     }
+
+.image-el img {
+    width: 250px;
+}
+
+.text-el {
+    left: 15px;
+    width: 500px;
+}
+
 }
 
 
@@ -418,6 +440,8 @@ transition: all 0.2s ease-in;
     .products-row {
         gap: 1.5rem;
     }
+
+    
 }
 
 
@@ -443,6 +467,78 @@ transition: all 0.2s ease-in;
     .products-row {
         gap: 1.5rem;
     }
+
+    .info-section {
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.image-el img {
+    height: 400px;
+    width: 90%;
+    top: 0;
+}
+
+.text-el {
+    position: relative;
+    top: 20px;
+    right: 0;
+    font-size: 10px;
+    width: 90%;
+}
+
+.newsletter-text {
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.newsletter-section button {
+  margin-right: 10px;
+  padding: 7px 10px;
+  border-radius: 15px;
+    font-size: 12px;
+}
+
+.footer-section {
+    flex-direction: column;
+    height: 200px;
+}
+
+.footer-logo {
+    width: 120px;
+}
+
+.footer-links {
+    gap: 20px;
+}
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+
+
+.hero-content {
+    margin-bottom: 10px;
+    margin-top: 40px;
+    line-height: 35px;
+}
+
+.hero-content h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.hero-content button {
+    margin-top: 20px;
+    padding: 10px 20px;
+}
 }
 
 
@@ -488,6 +584,55 @@ transition: all 0.2s ease-in;
         width: 90%;
         max-width: 280px;
     }
+
+    .info-section {
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.image-el img {
+    height: 400px;
+    width: 90%;
+    top: 0;
+}
+
+.text-el {
+    position: relative;
+    top: 20px;
+    right: 0;
+    width: 90%;
+    font-size: 10px;
+}
+
+
+.newsletter-text {
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.newsletter-section button {
+  margin-right: 10px;
+  padding: 7px 10px;
+  border-radius: 15px;
+    font-size: 12px;
+}
+
+.footer-section {
+    flex-direction: column;
+    height: 200px;
+}
+
+.footer-logo {
+    width: 120px;
+}
+
+.footer-links {
+    gap: 20px;
+}
+
 }
 
 
@@ -516,4 +661,6 @@ transition: all 0.2s ease-in;
     .trending-products-section h2 {
         font-size: 1.4rem;
     }
+
+    
 }
